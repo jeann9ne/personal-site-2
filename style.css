@@ -5,21 +5,33 @@
     margin: 0;
 }
 
+h1{
+    font-family: "Nunito sans", sans-serif;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #24443F;
     font-family: 'Abel', sans-serif;
 }
 
+/* Navigation style */
+
 header {
-    background-color: #F7F7F7;
+    width: 100%;
+    background-color:#F7F7F7;
+    position: fixed;
     display: flex;
     justify-content: space-between;
+    z-index: 999;
 }
 
 nav {
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    display: none;
 }
 
 nav ul {
@@ -45,9 +57,27 @@ nav ul li a:hover {
     color: #9a562F;
 }
 
-nav ul li a:active {
-    border-bottom: 3px solid black;
-    color: #9a562F;
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span{
+    font-size: 2em;
+}
+
+
+.nav-toggle:checked ~ nav {
+    display: flex;
 }
 
 title {
@@ -63,31 +93,72 @@ title {
 .logo img {
     width: 100%;
 }
-.content {
+content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .profile-block {
     display: flex;
-    flex-direction: column;
-    width: 70%;
-    height: 40%;
+    flex-grow: 1;
     background-color: #F7F7F7;
     padding: 20px;
     margin: 30px;
 }
 
 .profile-block img {
-    width: 60%;
-    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
     border-top: 1px solid #BA9336;
     border-bottom: 3px solid #BA9336;
 }
 
-@media screen and (max-width: 44em) {
+.card{
+    padding: 3rem;
+    margin: 3rem;
+    width: 26rem;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+}
+
+.message-form-field{
+    
+}
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.about{
+    margin-top:15px;
+}
+
+.projects{
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    width: 80%;;
+}
+.project-pic{
+    display: flex;
+    height: 15rem;
+}
+
+blockquote {
+    border-left: 2px solid #BA9336;
+}
+
+@media screen and (min-width: 375px) {
     nav[role="full-horizontal"] {
       ul > li {
         width: 100%;

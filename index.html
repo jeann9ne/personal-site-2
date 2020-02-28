@@ -3,7 +3,7 @@
     <head>
             <meta charset="utf-8">
             <title>Jeannine Coons' UX Portfolio</title>
-            <script src="https://kit.fontawesome.com/84336fdfc1.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link href="https://fonts.googleapis.com/css?family=Abel|Nunito+Sans&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="style.css" type="text/css">
             </title>
@@ -18,19 +18,28 @@
                     sizes='20vw' />
                     <img src='image/logo.png' alt="Jeannine Coons' Logo" />
                 </picture>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
             <ul>
                 <li><a href='index.html'>HOME</a></li>
-                <li><a href='#'>BLOG</a></li>
+                <li><a href='articlelist.html'>BLOG</a></li>
                 <li><a href='#'>PORTFOLIO</a></li>
+                <li><a href='#'>CONTACT</a></li>
             </ul>
             </nav>
+
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span>&#9776;</span>
+            </label>
+
         </header>
-        <div class='content'>
-            <section class=profile-block>
+
+        <content>
+                <section class=profile-block>
                 <title>
                     <h1>ABOUT</h1>
                 </title>
+                <div class="quote">
                     <picture class=profile-img>
                         <source media='(min-width: 36em)'
                         srcset='image/portrait-lrg.jpg 1024w,
@@ -39,8 +48,96 @@
                         sizes='30vw' />
                         <img src='image/portrait.jpg' alt='Painting of Jeannine'>
                     </picture>
-             <blockquote>I'm happiest when I'm exploring creative ways to help others.</blockquote>
+                <blockquote>I'm happiest when I'm exploring creative ways to help others.</blockquote>
+                </div>
+
+                    <article class=about>
+                        <h1>ABOUT</h1>
+                    <p>
+                        I'm a student at Kenzie Academy, enrolled in the UIE-4 Cohort.
+                         I'm a visual artist, mom and UX Engineer.
+                        My goal is to create meaningful and inspired designs, to share my abilities 
+                        with a world of people who need great design that speaks to their audience. My hope is to show my daughters
+                        that they can set out to achieve anything they are willing to work hard for. 
+                    </p>
+                    </article>
                 </section>
+        
+                <section class="projects" >
+                 
+                   <div class="projects">
+                       <ul>
+                           <li>
+                            <h2 class="project-title">StyleList</h2>
+                        <div>
+                            <img src="./image/stylelist.png" alt="stylelist app" class="project-pic">
+                            <a class="project-btn" href="#">View</a>
+                        </div>
+                                <p class="project-body">
+                                StyleList is a foundation project that encompasses a feature-rich CRM for beauty
+                                professionals and scales to fit the user's needs. Appointment booking and inventory
+                                management as well as tracking client preferences are all part of one simple, intuitive
+                                process designed with beauty professionals in mind.
+                                </p>
+                           </li>
+        
+                           <li>
+                            <h2 class="project-title">EventFull</h2>
+        
+                        <div>
+                            <img src="./image/eventfull.png" alt="eventfull app" class="project-pic">
+                            <a class="project-btn" href="#">View</a>
+                        </div>
+                            <p class= "project-body">
+                                EventFull is a capstone project designed to compete with Eventbrite and other event 
+                                management apps. This project was developed with a team of four designers and features
+                                a range of tools for users who wish to plan or attend events and find others who are 
+                                interested in the same types of activities. Allowing users to communicate with event
+                                planning teams and atendees sets EventFull apart from the competition.
+                            </p>
+                        
+                           </li>
+        
+                           <li>
+                            <h2 class="project-title">Red Tide</h2>
+                        <div>
+                            <img src="./image/sanibel-red-tide.png" alt="sanibel red tide presentation" class="project-pic">
+                            <a class="project-btn" href="#">View</a>
+                        </div>
+                            <p class="project-body">
+                                A presentation requested by Sanibel Island to answer their request for research and potential 
+                                solutions to the red tide crisis that was destroying thier local ecosystem. This presentation explains
+                                the causes of the irregular algea blooms and a few ways to prevent further damages. 
+                            </p>
+                       
+                           </li>
+                       </ul>
+                    </div>
+                </section>
+
+                <div class="conact">
+                        <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Contact</h2>
+                            <div class="form-field">
+                              <input type="text" placeholder="Name" required/>  
+                            </div>
+                            <div class="form-field">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-field">
+                                <input type="phone" placeholder="Phone (Optional)">
+                            </div>
+                            <div class="message-form-field">
+                                <input type="text" placeholder="Message">
+                            </div>
+                            <div>
+                                <button class="submit-btn" type="submit">Submit</button>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </content>
         </div>
 
     </body>
