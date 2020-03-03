@@ -92,6 +92,7 @@ title {
   width: 100%;
 }
 content {
+    padding: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,6 +158,11 @@ content {
   flex-direction: column;
   width: 80%;
 }
+
+.projects p{
+    padding-left: 10px;
+}
+
 .project-pic {
   height: 15rem;
 }
